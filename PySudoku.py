@@ -5,7 +5,7 @@ def new():
 
 def load(mode='easy'):
     global sdk
-    with open("puzzle_" + mode + ".txt", "r") as p:
+    with open("puzzles\\puzzle_" + mode + ".txt", "r") as p:
         sdk = json.loads(p.read())
 
 def show(sudoku):
